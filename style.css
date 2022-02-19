@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+:root{
+    --width-body: 100%; 
+    --width-content: 1038px;
+    --white-color: #FFFFFF; 
+    --black-color: #272A2F;
+}
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--white-color);
+}
+body{
+    position: relative;
+    max-width: var(--width-body);
+}
+header{
+    height: 58px;
+    background: #19849B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background: var(--black-color);
+    margin: 0px auto;
+    min-height: 1225px;
+}
+.container{
+    max-width: var(--width-content);
+    margin: 0px auto; 
+}
+
+
+
+
+
+
+.header__title{
+    max-height: 34px;
+    min-width: 265px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    margin-right: 9px;
+}
+
+
+
+
+
+
+
+.main__container{
+    padding-top: 51px;
+    margin-left: 15.7%;
+    margin-right: 12.2%;
+    display: grid;
+    grid-template-rows: minmax(auto,auto) minmax(616px,auto);
+}
+.main__avatar{
+    width: 411px;
+    height: 355px;
+    background-image: url("./assets/main__avatar.png");
+    background-repeat: no-repeat;
+}
+.main__about-author{
+ display: grid;
+ grid-template-columns: minmax(auto,411px) minmax(auto, 560px);
+ grid-gap: 69px;
+}
+
+
+
+
+
+
+.about-me__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    margin-top: -1px;
+    
+}
+.about-me__border{
+    margin-top: 15px;
+    max-width: 560px;
+    height: 4px;
+    background: #19849B;
+}
+.about-me__heading-text{
+    margin-top: 13px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+}
+.about-me__myself-text{
+    margin-top: 29px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+}
+.button{
+    background: var(--black-color);
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid var(--white-color);
+}
+.about-me__contact-btn{
+    height: 50px;
+    margin-top: 30px;
+    width: 52.5%;
+}
+
+
+
+
+
+
+.portfolio__title{
+    margin-top: 105px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+}
+.portfolit__text{
+    margin-top: 14px;
+    max-width:766px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+}
+.portfolit__gallery{
+    margin-top: 27px;
+    max-width: var(--width-content);
+    min-height: 509px;
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.gallery__id{
+    max-width: 244px;
+    max-height: 244px;
+    background: #19849B;
+}
+.gallery__image{
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+
+
+
+
+.footer__top-content{
+    max-width: 100%;
+    min-height: 161px;
+    background: #19849B;
+    display: flex;
+    justify-content: center;
+}
+.footer__top-content_container{
+    max-width: 243px;
+    display: grid;
+    grid-template-columns: minmax(132px, auto) minmax(195px,auto);
+    margin-right: 82px;
+}
+.footer__feedback-ava{
+   margin-top: 36px;
+   border-radius: 100%;
+}
+.footer__feedback-contacts{
+    margin-top: 42px;
+    margin-left: -2px;
+}
+.feedback__name{
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+.feedback__number{
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+.feedback__address{
+    margin-top: 7px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+
+}
+.footer__bottom-content{
+    min-height: 44px;
+    max-width: var(--width-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #16758A;
+}
+.footer__bottom-text{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin-top: 2px; 
+}
+
+
+
+
+
+
+.modal-contact{
+    top: 0px;
+    left: 0px;
+    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: none;
+    background: rgba(25, 132, 155);
+    background: rgba(25, 132, 155, 0.3);
+    opacity: 0;
+    visibility: hidden;  
+}
+.contact-me__modal-content{
+    margin: 25% 14% 50% 30%;
+    width: 50%;
+    height: 40%;
+    max-height: 600px;
+    background: var(--black-color);
+}
+.contact-me__modal-container{
+    display: grid;
+    grid-template-rows:  minmax(94px, auto) minmax(78px,auto) minmax(367px, auto);
+    grid-template-columns: 1fr;
+    max-width: 568px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.contact-me__modal-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    margin-top: 51px;
+}
+.contact-me__modal-text{
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    
+}
+.contact-me__modal-form{
+    display: grid; 
+    grid-template-rows: minmax(50px, auto) minmax(auto, auto) minmax(237px,auto) minmax(80px,auto);
+    grid-template-columns: minmax(0px, 200px) minmax(0px,350px);
+    grid-column-gap: 20px; 
+}
+.contact-me__modal-name{
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    background: #324B53;
+    color: #8EA5AC;
+}
+.contact-me__modal-surname{
+    padding-left: 21px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+}
+.contact-me__modal-form input[type="text"], .contact-me__modal-form textarea{
+    background: #324B53;
+    color: #8EA5AC;
+    border: none;
+    padding: 10px 5px 10px 5px;
+    font-size: 15px;
+}
+.contact-me__modal-textarea{
+    margin-top: 20px;
+    grid-column: 1/3;
+    grid-row: 2/4;  
+    resize: none;
+}
+.contact-me__modal-btn{
+    margin-top: 29px;
+    max-width: 218px;
+    grid-column: 1/3;
+}
+
+
+
+.modal-gallery{
+    top: 0px;
+    left: 0px;
+    transition: all 0.2s;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: none;
+    background: rgba(25, 132, 155);
+    background: rgba(25, 132, 155, 0.3);
+    display: flex;
+    padding: 15% 15% 15% 1%;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;  
+}
+.gallery-modal{
+    max-width: 1440px;
+    width: 35%;
+    height: 45.4%;
+    display: grid;
+    grid-template-rows: 30px minmax(auto, 675px);
+    grid-gap: 28px;
+    margin-bottom: 10%;
+}
+.gallery-close{
+    background: rgba(25, 132, 155, 0.3);
+    max-width: 150px;
+    margin-left: auto;
+}
+.gallery-modal__image{
+    width: 100%;
+}
+
+
+
+@media (max-width: 900px){
+:root{
+    --width-content: 762px;
+}
+
+    .main__container{
+        grid-template-rows: minmax(auto,auto) minmax(586px,auto);
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+    .main__avatar{
+        width: 100%;
+        height: 355px;
+        background-image: url("./assets/table_main__avatar.png");
+        background-position: center;
+    }
+    .main__about-author{
+        display: block; 
+    }
+    .about-me__title{
+     margin-top: 65px;
+        
+    }
+    .about-me__border{
+        max-width: 100%;
+    }
+    .about-me__heading-text{
+        margin-top: 12px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+    }
+    .about-me__contact-btn{
+        max-width: 293px;
+        
+    }
+    .main__portfolio{
+        min-height: 532;
+    }
+    .portfolio__title{
+        margin-top: 54px;
+    }
+    .portfolit__gallery{
+        min-height: 375px;
+    }
+    .gallery__image{
+        width: 180px;
+        height: 180px;
+    }
+    .gallery__id{
+        max-width: 179px;
+        max-height: 179px;
+    }
+    .footer__top-content{
+        min-height: 161px;
+    
+    }
+    .contact-me__modal-content{
+        margin: 47.5% 14% 50% 14%;
+        width: 73%;
+        max-height: 36.5%;
+    }
+    .contact-me__modal-container{
+        margin-left: 47px;
+
+    }
+
+    .gallery-modal{
+        margin-top: 30%;
+        width: 90%;
+    }
+}
+@media (min-width: 1450px){
+    .container{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+
+
+@media (max-width: 425px){
+    :root{
+        --width-content: 341px;
+    }
+    .main__container{
+        grid-template-rows: minmax(auto,auto) minmax(586px,auto);
+        margin-left: 4.7%;
+        margin-right: 4.7%;
+    }
+    .main__avatar{
+        width: 100%;
+        height: 355px;
+        background-image: url("./assets/mobile-main_avatar.png");
+        background-position: center;
+    }
+    .about-me__title{
+        margin-top: 62px;
+        
+    }
+    .about-me__contact-btn{
+        max-width: 340px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .main__portfolio{
+        min-height: 532;
+    }
+    .portfolio__title{
+        margin-top: 40px;
+        margin-left: -2px;
+    }
+    .portfolit__text{
+        margin-top: 8px;
+        margin-left: -2px;
+    }
+    .portfolit__gallery{
+        min-height: 375px;
+        margin-top: 36px;
+        margin-left: -2px;
+        margin-bottom: 38px;
+    }
+    .gallery__id{
+        max-width: 164px;
+        max-height: 164px;
+        margin-bottom: 16px;
+    }
+    .gallery__image{
+        width: 165px;
+        height: 165px;
+    }
+    .contact-me__modal-content{
+        max-height: 900px;
+        
+    }
+    .contact-me__modal-container{
+        text-align: center;
+        grid-template-rows:  minmax(94px, auto) minmax(180px,auto) minmax(367px, auto);
+        grid-template-columns: minmax(0px, 375px);
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .contact-me__modal-form{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .contact-me__modal-name{
+        min-height: 50px;
+        margin-bottom: 30px;
+    }
+    .contact-me__modal-surname{
+        min-height: 50px;
+        margin-bottom: 30px;
+    }
+    .contact-me__modal-textarea{
+        min-height: 200px;
+        margin-bottom: 10px;
+    }
+    .contact-me__modal-btn{
+        min-height: 50px;
+        margin-left: 6%;
+    }
+    
+}
+@media (max-width: 360px){
+    .portfolit__gallery{
+        margin-left: 21%;
+    }
+}
+
+
+
+
+.button:hover{
+    background: #19849B;
+}
+.gallery__image:hover {
+    opacity: 0.5;
+    
+}
+.placeholder-red::-webkit-input-placeholder {
+    color: rgb(248, 105, 105);
+ }

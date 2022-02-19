@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Exam</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="header__title">Lucas Montana</h1>
+    </header>
+    <main>
+        <div class="main__container container">
+            <div class="main__about-author">
+                <div class="main__avatar"></div>
+                <div class="main__about-me">
+                    <div class="about-me__title">Hey. I'm Lucas <br> And I'm a professional photographer</div>
+
+                    <div class="about-me__border"></div>
+
+
+                    <div class="about-me__heading-text">Curabitur blanit tempus porttitor. Vollis ac inceptos
+                        mollisestor commodo luctus. </div>
+                    <div class="about-me__myself-text">Curabitur blandit tempus porttitor. Vollis ac inceptos
+                        mollisestor commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac
+                        consectetur ac, vestibulum at eros. Vestibulum id ligulas semper. Cum sociis natoque penatibus
+                        et magnis maecenas. Donec ullamcorper nulla non metus auctor fringilla. </div>
+                    <input class="about-me__contact-btn button" type="button" value="CONTACT ME">
+                </div>
+            </div>
+            <div class="main__portfolio">
+                <h1 class="portfolio__title">Portfolio</h1>
+                <p class="portfolit__text">Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor commodo
+                    luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at
+                    eros.</p>
+
+                <div class="portfolit__gallery">
+                    <div class="gallery__id"><img src="./assets/portfolio_1.png" alt="" class="gallery__image"></div>
+                    <div class="gallery__id"><img src="./assets/portfolio_2.png" alt="" class="gallery__image"></div>
+                    <div class="gallery__id"><img src="./assets/portfolio_3.png" alt="" class="gallery__image"></div>
+                    <div class="gallery__id"><img src="./assets/portfolio_4.png" alt="" class="gallery__image"></div>
+                    <div class="gallery__id"><img src="./assets/portfolio_5.png" alt="" class="gallery__image"></div>
+                    <div class="gallery__id"><img src="./assets/portfolio_6.png" alt="" class="gallery__image"></div>
+                    <div class="gallery__id"><img src="./assets/portfolio_7.png" alt="" class="gallery__image"></div>
+                    <div class="gallery__id"><img src="./assets/portfolio_8.png" alt="" class="gallery__image"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__top-content">
+            <div class="footer__top-content_container">
+                <img src="./assets/footer__avatar.png" alt="" class="footer__feedback-ava"></img>
+                <div class="footer__feedback-contacts">
+                    <h2 class="feedback__name">Lucas Montana</h2>
+                    <p class="feedback__number">+4 768 25 25 255</p>
+                    <p class="feedback__address">Poland, Warsaw</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom-content">
+            <p class="footer__bottom-text">All rights reserved “World Photos”</p>
+        </div>
+    </footer>
+    <div class="modal-contact">
+
+        <div class="contact-me__modal-content">
+            <div class="contact-me__modal-container">
+                <div class="contact-me__modal-title">Contact me</div>
+                <p class="contact-me__modal-text">Curabitur blandit tempus porttitor. Vollis ac inceptos mollisestor
+                    commodo luctus. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac,
+                    vestibulum at eros.</p>
+                <form action="" class="contact-me__modal-form">
+                    <input name="Name" placeholder="Your name..." type="text"
+                        class="form-inputs contact-me__modal-name">
+                    <input name="Surname" placeholder="Your email..." type="text"
+                        class="form-inputs contact-me__modal-surname">
+
+                    <textarea name="message" placeholder="Enter"
+                        class="form-inputs contact-me__modal-textarea"></textarea>
+                    <input class="contact-me__modal-btn button" type="submit" value="Send message">
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-gallery">
+        <div class="gallery-modal">
+            <input type="button" class="gallery-close button" value="CLOSE">
+            <img class="gallery-modal__image" src="/assets/portfolio_1.png" alt="">
+        </div>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
